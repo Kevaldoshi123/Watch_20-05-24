@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Information - Vintage Timepieces</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Garamond', serif;
+        }
+
+        body {
+            background-color: #f8f5f0;
+            color: #2c1810;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(to right, #2c1810, #5c3624);
+            color: #f8f5f0;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .info-section {
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0d5cc;
+        }
+
+        .support-card {
+            background: #faf6f2;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon-placeholder {
+            width: 50px;
+            height: 50px;
+            background: #5c3624;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8f5f0;
+            font-size: 24px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 1.5rem;
+            background: #faf6f2;
+            border-radius: 8px;
+        }
+
+        .member-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: none;
+            border: 2px solid #5c3624;
+        }
+        
+        .member-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+        .campaign-card {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #faf6f2;
+            border-radius: 8px;
+        }
+
+        .campaign-image {
+            width: 200px;
+            height: 150px;
+            background: #e0d5cc;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #5c3624;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0d5cc;
+        }
+
+        h3 {
+            color: #2c1810;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            background: #2c1810;
+            color: #f8f5f0;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 2rem;
+            background: #2c1810;
+            color: #f8f5f0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .campaign-card {
+                flex-direction: column;
+            }
+            
+            .campaign-image {
+                width: 100%;
+            }
+            
+            .support-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to SAMAY Watches</h1>
+            <p>Preserving Time's Greatest Moments</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Support Center Section -->
+        <section class="info-section" id="support-center">
+            <h2>Support Center</h2>
+            
+            <div class="support-card">
+                <div class="icon-placeholder">?</div>
+                <div>
+                    <h3>Frequently Asked Questions</h3>
+                    <p>Find answers to common questions about our vintage watches, shipping, returns, and more.</p>
+                </div>
+            </div>
+
+            <div class="support-card">
+                <div class="icon-placeholder">✉</div>
+                <div>
+                    <h3>Email Support</h3>
+                    <p>For detailed inquiries, email us at support@samaywatches.com</p>
+                </div>
+            </div>
+
+            <div class="support-card">
+                <div class="icon-placeholder">📞</div>
+                <div>
+                    <h3>Phone Support</h3>
+                    <p>Call us at +91 9967321046<br>
+                    Monday - Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Support Section -->
+        <section class="info-section" id="customer-support">
+            <h2>Customer Support</h2>
+            
+            <h3>Our Commitment to You</h3>
+            <p>At Samay Watches, we believe in providing exceptional service that matches the quality of our watches. Our team of horological experts is here to assist you with:</p>
+            
+            <ul>
+                <li>Authentication services</li>
+                <li>Maintenance advice</li>
+                <li>Restoration consultations</li>
+                <li>Value appraisals</li>
+                <li>Insurance documentation</li>
+            </ul>
+
+            <div class="contact-info">
+                <h3>Emergency Support</h3>
+                <p>For urgent matters regarding your recent purchase, contact our priority line:<br>
+                    +91 9967321046</p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="info-section" id="about-us">
+            <h2>About Us</h2>
+            
+            <p>Founded in 2025, Samay Watches,we authenticate and preserve the world's finest timepieces.</p>
+
+            <h3>Our Team</h3>
+            
+<div class="team-grid">
+    <div class="team-member">
+        <div class="member-image">
+            <img src="assets/KEVALimg.jpg" alt="James Harrison">
+        </div>
+        <h3>DOSHI KEVAL</h3>
+        <p>FYBSCIT-A</p>
+    </div>
+    <div class="team-member">
+        <div class="member-image">
+            <img src="assets/MANNAN.jpg" alt="Elena Rodriguez">
+        </div>
+        <h3>MANNAN SHAH</h3>
+        <p>FYBSCIT-A</p>
+    </div>
+</div>
+
+        </section>
+
+        
+
+    <!-- Copyright Section -->
+    <footer class="copyright">
+        <div class="container">
+            <p>© 2025 SAMAY. All Rights Reserved.</p>
+            <p>All trademarks, logos, and brand names are the property of their respective owners.</p>
+            <p>
+                Any reproduction, distribution, or unauthorized use of protected content from this website 
+                without written permission is strictly prohibited.
+            </p>
+            
+            <p>
+                Images and descriptions of vintage watches are provided for identification purposes only. 
+                Samay Watches is not affiliated with any watch manufacturer unless explicitly stated.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

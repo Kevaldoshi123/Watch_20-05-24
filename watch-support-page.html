@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Vintage Timepieces</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Garamond', serif;
+        }
+
+        body {
+            background-color: #f8f5f0;
+            color: #2c1810;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(to right, #2c1810, #5c3624);
+            color: #f8f5f0;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 40px;
+            background: #fff;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .support-section {
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0d5cc;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .quick-link {
+            background: #faf6f2;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #2c1810;
+            flex: 1 1 200px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .quick-link:hover {
+            transform: translateY(-3px);
+            background: #e0d5cc;
+        }
+
+        .service-card {
+            background: #faf6f2;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #5c3624;
+        }
+
+        .warranty-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .warranty-table th,
+        .warranty-table td {
+            padding: 1rem;
+            border: 1px solid #e0d5cc;
+            text-align: left;
+        }
+
+        .warranty-table th {
+            background: #5c3624;
+            color: #f8f5f0;
+        }
+
+        .warranty-table tr:nth-child(even) {
+            background: #faf6f2;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-card {
+            background: #faf6f2;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: #5c3624;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8f5f0;
+            font-size: 24px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #5c3624;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0d5cc;
+        }
+
+        h3 {
+            color: #2c1810;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 2rem auto;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0d5cc;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            outline: none;
+        }
+
+        .search-bar input:focus {
+            border-color: #5c3624;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 2rem 0;
+            }
+            
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+            
+            .warranty-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Support & Service Center</h1>
+            <p>Expert Care for Your Timeless Pieces</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for support topics...">
+        </div>
+
+        <div class="quick-links">
+            <a href="#product-help" class="quick-link">Product Help</a>
+            <a href="#warranty" class="quick-link">Warranty Information</a>
+            <a href="#services" class="quick-link">Authorized Services</a>
+            <a href="#customer-care" class="quick-link">Customer Care</a>
+        </div>
+
+        <!-- Product Help Section -->
+        <section class="support-section" id="product-help">
+            <h2>Product Help</h2>
+            
+            <div class="support-grid">
+                <div class="service-card">
+                    <h3>Watch Care Guides</h3>
+                    <ul>
+                        <li>Daily maintenance tips</li>
+                        <li>Cleaning instructions</li>
+                        <li>Storage recommendations</li>
+                        <li>Water resistance guide</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Troubleshooting</h3>
+                    <ul>
+                        <li>Time accuracy issues</li>
+                        <li>Winding problems</li>
+                        <li>Date adjustment</li>
+                        <li>Crown operation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>User manuals</li>
+                        <li>Technical specifications</li>
+                        <li>Authentication guides</li>
+                        <li>Service history records</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service & Warranty Section -->
+        <section class="support-section" id="warranty">
+            <h2>Service & Warranty</h2>
+            
+            <table class="warranty-table">
+                <thead>
+                    <tr>
+                        <th>Service Type</th>
+                        <th>Coverage Period</th>
+                        <th>What's Included</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard Warranty</td>
+                        <td>6 months</td>
+                        <td>Movement defects, manufacturing issues</td>
+                    </tr>
+                    <tr>
+                        <td>Extended Warranty</td>
+                        <td>2 years</td>
+                        <td>Full coverage + annual maintenance</td>
+                    </tr>
+                    <tr>
+                        <td>Restoration Warranty</td>
+                        <td>3 months</td>
+                        <td>Restored components guarantee</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="service-card">
+                <h3>Warranty Claims Process</h3>
+                <ol>
+                    <li>Contact our warranty department</li>
+                    <li>Receive return authorization</li>
+                    <li>Ship watch with documentation</li>
+                    <li>Receive assessment within 5 business days</li>
+                    <li>Approve repair plan</li>
+                    <li>Receive serviced timepiece</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Authorized Services Section -->
+        <section class="support-section" id="services">
+            <h2>Authorized Services</h2>
+            
+            <div class="support-grid">
+                <div class="service-card">
+                    <h3>Authentication Service</h3>
+                    <p>Expert verification of vintage timepieces including:</p>
+                    <ul>
+                        <li>Movement inspection</li>
+                        <li>Case and dial authenticity</li>
+                        <li>Historical documentation</li>
+                        <li>Certificate of authenticity</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Restoration Services</h3>
+                    <p>Complete restoration services including:</p>
+                    <ul>
+                        <li>Movement overhaul</li>
+                        <li>Case refinishing</li>
+                        <li>Dial restoration</li>
+                        <li>Parts replacement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Maintenance Services</h3>
+                    <p>Regular maintenance services including:</p>
+                    <ul>
+                        <li>Movement cleaning</li>
+                        <li>Water resistance testing</li>
+                        <li>Timing adjustment</li>
+                        <li>Battery replacement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Care Section -->
+        <section class="support-section" id="customer-care">
+            <h2>Customer Care</h2>
+
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone Support</h3>
+                    <p>+91 9967321046</p>
+                    <p>Mon-Fri: 9AM-6PM</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <h3>Email Support</h3>
+                    <p>support@samaywatches.com</p>
+                    <p>Response within 24 hours</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <p>Available 24/7</p>
+                    <p>Instant expert assistance</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <h3>Priority Support</h3>
+                <p>For urgent matters regarding your vintage timepiece, contact our priority line:</p>
+                <p>+91 9967321046</p>
+                <p>Available 24/7 for emergency support</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
